@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Input;
 using WpfProject.Commands;
+using WpfProject.Commands.WpfProject.Commands;
 using WpfProject.DataBase;
 using WpfProject.Model;
 using WpfProject.View;
@@ -33,7 +34,7 @@ namespace WpfProject.ViewModel
         private ICommand addButtonCommand;
         private ICommand sendButtonCommand;
         private ICommand deleteButtonCommand;
-
+       
 
 
         private Personne personneSelected;
@@ -46,10 +47,14 @@ namespace WpfProject.ViewModel
             db.Test();
 
 
-        AddButtonCommand = new RelayCommand(add);
+            AddButtonCommand = new RelayCommand(add);
             sendButtonCommand = new RelayCommand(send);
             deleteButtonCommand = new RelayCommand(delete);
+           
         }
+       
+
+       
 
 
         Personne personne = new Personne(10, "c'est moi");
@@ -97,7 +102,7 @@ namespace WpfProject.ViewModel
                 PropertyChanged(this, new PropertyChangedEventArgs(str));
             }
         }
-
+         
         public bool NotifyPropertyChanged<T>(ref T variable, T valeur, string nomPropriete = null)
         {
             if (object.Equals(variable, valeur)) return false;
@@ -106,6 +111,7 @@ namespace WpfProject.ViewModel
             NotifyPropertyChanged(nomPropriete);
             return true;
         }
+
 
         public ObservableCollection<Personne> Personnes
         {

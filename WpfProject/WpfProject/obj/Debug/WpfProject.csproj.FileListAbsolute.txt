@@ -26,3 +26,36 @@ C:\Users\INES NASR\documents\visual studio 2015\Projects\WpfProject\WpfProject\o
 C:\Users\INES NASR\documents\visual studio 2015\Projects\WpfProject\WpfProject\obj\Debug\WpfProject.csproj.GenerateResource.Cache
 C:\Users\INES NASR\documents\visual studio 2015\Projects\WpfProject\WpfProject\obj\Debug\WpfProject.exe
 C:\Users\INES NASR\documents\visual studio 2015\Projects\WpfProject\WpfProject\obj\Debug\WpfProject.pdb
+C:\Users\INES NASR\Desktop\MBDS M2\ProjetC#\WpfProject\WpfProject\bin\Debug\WpfProject.exe.config
+C:\Users\INES NASR\Desktop\MBDS M2\ProjetC#\WpfProject\WpfProject\obj\Debug\WpfProject.exe
+C:\Users\INES NASR\Desktop\MBDS M2\ProjetC#\WpfProject\WpfProject\obj\Debug\WpfProject.pdb
+C:\Users\INES NASR\Desktop\MBDS M2\ProjetC#\WpfProject\WpfProject\obj\Debug\WpfProject.csprojResolveAssemblyReference.cache
+C:\Users\INES NASR\Desktop\MBDS M2\ProjetC#\WpfProject\WpfProject\obj\Debug\View\MainWindow.g.cs
+C:\Users\INES NASR\Desktop\MBDS M2\ProjetC#\WpfProject\WpfProject\obj\Debug\View\Formulaire.g.cs
+C:\Users\INES NASR\Desktop\MBDS M2\ProjetC#\WpfProject\WpfProject\obj\Debug\App.g.cs
+C:\Users\INES NASR\Desktop\MBDS M2\ProjetC#\WpfProject\WpfProject\obj\Debug\WpfProject_Content.g.cs
+C:\Users\INES NASR\Desktop\MBDS M2\ProjetC#\WpfProject\WpfProject\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\INES NASR\Desktop\MBDS M2\ProjetC#\WpfProject\WpfProject\obj\Debug\WpfProject_MarkupCompile.cache
+C:\Users\INES NASR\Desktop\MBDS M2\ProjetC#\WpfProject\WpfProject\obj\Debug\WpfProject_MarkupCompile.lref
+C:\Users\INES NASR\Desktop\MBDS M2\ProjetC#\WpfProject\WpfProject\bin\Debug\x86\e_sqlite3.dll
+C:\Users\INES NASR\Desktop\MBDS M2\ProjetC#\WpfProject\WpfProject\bin\Debug\x64\e_sqlite3.dll
+C:\Users\INES NASR\Desktop\MBDS M2\ProjetC#\WpfProject\WpfProject\bin\Debug\WpfProject.exe
+C:\Users\INES NASR\Desktop\MBDS M2\ProjetC#\WpfProject\WpfProject\bin\Debug\WpfProject.pdb
+C:\Users\INES NASR\Desktop\MBDS M2\ProjetC#\WpfProject\WpfProject\bin\Debug\SQLite-net.dll
+C:\Users\INES NASR\Desktop\MBDS M2\ProjetC#\WpfProject\WpfProject\bin\Debug\SQLitePCLRaw.batteries_green.dll
+C:\Users\INES NASR\Desktop\MBDS M2\ProjetC#\WpfProject\WpfProject\bin\Debug\SQLitePCLRaw.batteries_v2.dll
+C:\Users\INES NASR\Desktop\MBDS M2\ProjetC#\WpfProject\WpfProject\bin\Debug\SQLitePCLRaw.core.dll
+C:\Users\INES NASR\Desktop\MBDS M2\ProjetC#\WpfProject\WpfProject\bin\Debug\SQLitePCLRaw.provider.e_sqlite3.dll
+C:\Users\INES NASR\Desktop\MBDS M2\ProjetC#\WpfProject\WpfProject\bin\Debug\System.Data.SQLite.dll
+C:\Users\INES NASR\Desktop\MBDS M2\ProjetC#\WpfProject\WpfProject\bin\Debug\SQLite-net.xml
+C:\Users\INES NASR\Desktop\MBDS M2\ProjetC#\WpfProject\WpfProject\bin\Debug\System.Data.SQLite.xml
+C:\Users\INES NASR\Desktop\MBDS M2\ProjetC#\WpfProject\WpfProject\obj\Debug\View\MainWindow.baml
+C:\Users\INES NASR\Desktop\MBDS M2\ProjetC#\WpfProject\WpfProject\obj\Debug\View\Formulaire.baml
+C:\Users\INES NASR\Desktop\MBDS M2\ProjetC#\WpfProject\WpfProject\obj\Debug\WpfProject.g.resources
+C:\Users\INES NASR\Desktop\MBDS M2\ProjetC#\WpfProject\WpfProject\obj\Debug\WpfProject.Properties.Resources.resources
+C:\Users\INES NASR\Desktop\MBDS M2\ProjetC#\WpfProject\WpfProject\obj\Debug\WpfProject.csproj.GenerateResource.Cache
+C:\Users\INES NASR\Desktop\MBDS M2\ProjetC#\WpfProject\WpfProject\obj\Debug\View\LoginScreen.g.cs
+C:\Users\INES NASR\Desktop\MBDS M2\ProjetC#\WpfProject\WpfProject\obj\Debug\View\LoginScreen.baml
+C:\Users\INES NASR\Desktop\MBDS M2\ProjetC#\WpfProject\WpfProject\bin\Debug\Newtonsoft.Json.dll
+C:\Users\INES NASR\Desktop\MBDS M2\ProjetC#\WpfProject\WpfProject\bin\Debug\Newtonsoft.Json.pdb
+C:\Users\INES NASR\Desktop\MBDS M2\ProjetC#\WpfProject\WpfProject\bin\Debug\Newtonsoft.Json.xml

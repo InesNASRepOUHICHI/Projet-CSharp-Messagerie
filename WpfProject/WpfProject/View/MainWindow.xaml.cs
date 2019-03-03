@@ -21,14 +21,15 @@ namespace WpfProject
     /// </summary>
     public partial class MainWindow : Window
     {
-        ViewModelBase _viewModelBase =new ViewModelBase();
-    
+         ViewModelBase _viewModelBase =new ViewModelBase();
+       
+
         public MainWindow()
         {
-            InitializeComponent();
-            this.DataContext = _viewModelBase;
-            _viewModelBase.load();
-            
+          InitializeComponent();
+              this.DataContext = _viewModelBase;
+             _viewModelBase.load();
+
 
         }
     }
