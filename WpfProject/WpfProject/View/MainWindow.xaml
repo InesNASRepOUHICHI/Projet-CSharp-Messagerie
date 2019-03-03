@@ -1,0 +1,50 @@
+﻿<Window x:Class="WpfProject.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfProject.ViewModel"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="400" Width="700">
+    <Window.DataContext>
+        <local:ViewModelBase></local:ViewModelBase>
+    </Window.DataContext>
+    <Window.Resources>
+            <DataTemplate x:Key="InfoPersonnes">
+                <TextBlock Text="{Binding Nickname}" Grid.Column="0" FontSize="20"/>
+
+
+            </DataTemplate>
+        </Window.Resources>
+
+        <Grid Margin="0,0,-103,-57">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="2*" />
+                <ColumnDefinition Width="2*" />
+            </Grid.ColumnDefinitions>
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="3*" />
+                <RowDefinition Height="1*"/>
+            </Grid.RowDefinitions>
+        <ListBox Margin="47,16,122,10" Name="PersonneList"  ItemTemplate = "{StaticResource InfoPersonnes}" ItemsSource="{Binding Personnes}" SelectedItem = "{Binding PersonneSelected}">
+
+            </ListBox>
+        <Button Margin="71,319,263,63" Content="+" RenderTransformOrigin="2.132,0.486" Command="{Binding AddButtonCommand}" Grid.RowSpan="2">
+                <Button.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform AngleY="-0.573"/>
+                        <RotateTransform/>
+                        <TranslateTransform Y="-2.089"/>
+                    </TransformGroup>
+                </Button.RenderTransform>
+            </Button>
+        <Button Margin="206,319,132,62" Content="-" RenderTransformOrigin="2.132,0.486" Command="{Binding DeleteButtonCommand}" Grid.RowSpan="2"/>
+
+        <ListBox Margin="356,17,129,0" RenderTransformOrigin="0.5,0.5"  Name="List" ItemsSource="{Binding ElementName=PersonneList, Path=SelectedItem.GetList}" Foreground="Red" Grid.ColumnSpan="2" Height="240" VerticalAlignment="Top"/>
+        <TextBox Margin="356,288,247,79" Grid.RowSpan="2" Grid.ColumnSpan="2" Text="{Binding Path=Msg}" Name="inputtxt"/>
+        <Button Margin="191,288,146,79" Content="Send" RenderTransformOrigin="2.132,0.486" Grid.Column="1" Grid.RowSpan="2" Command="{Binding SendButtonCommand}"/>
+        </Grid>
+
+</Window>
