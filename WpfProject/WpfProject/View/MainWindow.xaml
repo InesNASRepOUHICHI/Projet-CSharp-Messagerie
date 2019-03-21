@@ -5,46 +5,61 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfProject.ViewModel"
         mc:Ignorable="d"
-        Title="MainWindow" Height="400" Width="700">
+        Title="MainWindow" Height="432" Width="859">
     <Window.DataContext>
         <local:ViewModelBase></local:ViewModelBase>
     </Window.DataContext>
     <Window.Resources>
-            <DataTemplate x:Key="InfoPersonnes">
-                <TextBlock Text="{Binding Nickname}" Grid.Column="0" FontSize="20"/>
+        <DataTemplate x:Key="InfoPersonnes">
+            <TextBlock Text="{Binding Nickname}" Grid.Column="0" FontSize="20"/>
+        </DataTemplate>
+    </Window.Resources>
 
+    <Grid Margin="0,0,-8,-5">
 
-            </DataTemplate>
-        </Window.Resources>
+        <Grid.Background>
+            <ImageBrush ImageSource="C:\Users\INES NASR\Desktop\MBDS M2\ProjetC#\WpfProject\WpfProject\images\sms-e.png"/>
+        </Grid.Background>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="315*" />
+            <ColumnDefinition Width="114*"/>
+            <ColumnDefinition Width="420*" />
+            <ColumnDefinition Width="7*"/>
+        </Grid.ColumnDefinitions>
 
-        <Grid Margin="0,0,-103,-57">
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="2*" />
-                <ColumnDefinition Width="2*" />
-            </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="3*" />
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+        <Border Grid.Column="0" Grid.Row="0" Padding="5" Background="#4E87D4" Margin="47,16,16,248">
+            <Label VerticalAlignment="Top" Foreground="White" Margin="63,-5,68,0" Height="25" RenderTransformOrigin="0.495,1">Liste des Contacts</Label>
+        </Border>
+        <ListBox Margin="47,47,16,87" Name="PersonneList"  ItemTemplate = "{StaticResource InfoPersonnes}" ItemsSource="{Binding Personnes}" SelectedItem = "{Binding PersonneSelected}" Grid.RowSpan="2">
 
-            <Grid.RowDefinitions>
-                <RowDefinition Height="3*" />
-                <RowDefinition Height="1*"/>
-            </Grid.RowDefinitions>
-        <ListBox Margin="47,16,122,10" Name="PersonneList"  ItemTemplate = "{StaticResource InfoPersonnes}" ItemsSource="{Binding Personnes}" SelectedItem = "{Binding PersonneSelected}">
+        </ListBox>
+        <Button   Margin="67,40,150,34"  RenderTransformOrigin="2.132,0.486" Command="{Binding AddButtonCommand}" Grid.Row="1">
+            <Image Source="C:\Users\INES NASR\Desktop\MBDS M2\ProjetC#\WpfProject\WpfProject\images\plus.png"></Image>
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleY="-0.573"/>
+                    <RotateTransform/>
+                    <TranslateTransform Y="-2.089"/>
+                </TransformGroup>
+            </Button.RenderTransform>
+        </Button>
+        <Button  Margin="188,39,33,34"  RenderTransformOrigin="2.132,0.486" Command="{Binding DeleteButtonCommand}" Grid.Row="1">
+            <Image Source="C:\Users\INES NASR\Desktop\MBDS M2\ProjetC#\WpfProject\WpfProject\images\minus.png"></Image>
+        </Button>
 
-            </ListBox>
-        <Button Margin="71,319,263,63" Content="+" RenderTransformOrigin="2.132,0.486" Command="{Binding AddButtonCommand}" Grid.RowSpan="2">
-                <Button.RenderTransform>
-                    <TransformGroup>
-                        <ScaleTransform/>
-                        <SkewTransform AngleY="-0.573"/>
-                        <RotateTransform/>
-                        <TranslateTransform Y="-2.089"/>
-                    </TransformGroup>
-                </Button.RenderTransform>
-            </Button>
-        <Button Margin="206,319,132,62" Content="-" RenderTransformOrigin="2.132,0.486" Command="{Binding DeleteButtonCommand}" Grid.RowSpan="2"/>
-
-        <ListBox Margin="356,17,129,0" RenderTransformOrigin="0.5,0.5"  Name="List" ItemsSource="{Binding ElementName=PersonneList, Path=SelectedItem.GetList}" Foreground="Red" Grid.ColumnSpan="2" Height="240" VerticalAlignment="Top"/>
-        <TextBox Margin="356,288,247,79" Grid.RowSpan="2" Grid.ColumnSpan="2" Text="{Binding Path=Msg}" Name="inputtxt"/>
-        <Button Margin="191,288,146,79" Content="Send" RenderTransformOrigin="2.132,0.486" Grid.Column="1" Grid.RowSpan="2" Command="{Binding SendButtonCommand}"/>
-        </Grid>
+        <ListBox Margin="10,39,63,0" RenderTransformOrigin="0.5,0.5"  Name="List" ItemsSource="{Binding ElementName=PersonneList, Path=SelectedItem.GetList}" Foreground="Red" Height="255" VerticalAlignment="Top" Grid.Column="2"/>
+        <TextBox Margin="10,10,112,10" Text="{Binding Path=Msg}" Name="inputtxt" Grid.Column="2" Grid.Row="1"/>
+        <Button Margin="328,39,20,34"  RenderTransformOrigin="2.132,0.486" Grid.Column="2" Command="{Binding SendButtonCommand}" Grid.Row="1">
+            <Image Source="C:\Users\INES NASR\Desktop\MBDS M2\ProjetC#\WpfProject\WpfProject\images\telegram-app.png"></Image>
+        </Button>
+        <Border Grid.Column="2" Grid.Row="0" Height="35" Padding="5" Background="#4E87D4" Margin="10,16,63,253">
+            <Label VerticalAlignment="Top" Foreground="White" Margin="112,-5,68,0" Height="25" RenderTransformOrigin="0.495,1" Content="Liste des Messages"/>
+        </Border>
+    </Grid>
 
 </Window>
