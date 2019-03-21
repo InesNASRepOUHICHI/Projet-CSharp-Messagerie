@@ -16,7 +16,7 @@ namespace WpfProject.DataBase
     public class SqliteHelper
     { 
         private  SQLiteConnection connection;
-        private string _dbPath = "C:/folder/MyDatabase.db3";
+        private string _dbPath = "../MyDatabase.db3"; // a changer
 
         public SqliteHelper()
         {

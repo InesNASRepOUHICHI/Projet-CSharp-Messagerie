@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\deptinfo\Desktop\Projet-CSharp-Messagerie\WpfProject\WpfProject\obj\Debug\
+C:\Users\deptinfo\Desktop\Projet-CSharp-Messagerie\WpfProject\WpfProject\obj\Release\
 WpfProject
 none
 false
-DEBUG;TRACE
+TRACE
 C:\Users\deptinfo\Desktop\Projet-CSharp-Messagerie\WpfProject\WpfProject\App.xaml
 472746126
 2-1534100393
-21294658454
+211185140969
 73-1940341358
 View\LoginScreen.xaml;View\MainWindow.xaml;View\Formulaire.xaml;View\Register.xaml;
 
-False
+True
 

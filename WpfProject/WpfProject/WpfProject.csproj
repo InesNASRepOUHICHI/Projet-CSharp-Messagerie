@@ -92,9 +92,13 @@
     <Compile Include="DataBase\SqliteHelper.cs" />
     <Compile Include="Model\User.cs" />
     <Compile Include="Utils\Session.cs" />
+    <Compile Include="ViewModel\Authentication.cs" />
     <Compile Include="ViewModel\ViewModelBase.cs" />
     <Compile Include="View\Formulaire.xaml.cs">
       <DependentUpon>Formulaire.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Register.xaml.cs">
+      <DependentUpon>Register.xaml</DependentUpon>
     </Compile>
     <Page Include="View\LoginScreen.xaml">
       <SubType>Designer</SubType>
@@ -116,6 +120,10 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="View\Formulaire.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Register.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
